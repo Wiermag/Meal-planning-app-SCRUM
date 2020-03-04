@@ -1,3 +1,11 @@
+@mixin button {
+  background-color: $button-color;
+  padding: 10px 6px;
+  cursor: pointer;
+  font: bold 1em $main-font;
+  color: #FFFFFA;
+}
+
 .container {
   font-family: $main-font;
   width: 100vw;
@@ -9,36 +17,32 @@
   align-items: center;
 }
 
-.cta-text {
-  width: 60%;
-  height: 50%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.cta-header, .cta-paragraph {
-  color: #FFFFFA;
-}
+.cta {
+  &-header {
+    width: 60%;
+    height: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-.cta-header {
-  font-size: 36px;
-  //padding-bottom: 14px;
-}
+  .&-header, .&-paragraph {
+    color: #FFFFFA;
+  }
 
-.cta-paragraph {
-  font-size: 24px;
-}
+  .&-header {
+    font-size: 36px;
+  }
 
-.cta-button {
-  background-color: $button-color;
-  width: 200px;
-  height: 50px;
-  padding: 10px 6px;
-  cursor: pointer;
-  font-family: $main-font;
-  font-size: 1em;
-  font-weight: bold;
-  color: #FFFFFA;
+  .&-paragraph {
+    font-size: 24px;
+  }
+
+  .&-button {
+    @include button;
+    width: 200px;
+    height: 50px;
+  }
 }
 
