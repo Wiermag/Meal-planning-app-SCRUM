@@ -5,6 +5,17 @@
 // https://fontawesome.com/how-to-use/on-the-web/using-with/sass
 
 
-body{
-  background-color: #BADA55;
-}
+// body {
+//   background-color: #BADA55;
+// }
+
+
+@import './variables/colors';
+@import './variables/fonts';
+@import './layout/header';
+@import './layout/aboutauthor';
+@import './layout/footer';
+@import './config/reset';
+// @import './images/cooking.jpg';
+@import "./layout/about-app";
+@import "./layout/addnewplan";
