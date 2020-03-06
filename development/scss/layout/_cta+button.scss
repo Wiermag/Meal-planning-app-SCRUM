@@ -1,0 +1,48 @@
+@mixin button {
+  background-color: $button-color;
+  padding: 10px 6px;
+  cursor: pointer;
+  font: bold 1em $main-font;
+  color: #FFFFFA;
+}
+
+.container {
+  font-family: $main-font;
+  width: 100vw;
+  margin: 0 auto;
+  height: 255px;
+  background-color: $main-color;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cta {
+  &-header {
+    width: 60%;
+    height: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &-header, &-paragraph {
+    color: #FFFFFA;
+  }
+
+  &-header {
+    font-size: 36px;
+  }
+
+  &-paragraph {
+    font-size: 24px;
+  }
+
+  &-button {
+    @include button;
+    width: 200px;
+    height: 50px;
+  }
+}
+
