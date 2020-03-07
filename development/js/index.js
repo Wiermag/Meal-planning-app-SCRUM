@@ -6,7 +6,7 @@ const carousel = document.querySelectorAll(".carousel-slide");
 
 let i = 0;
 function slide() {
-    if (i <= 0 ){
+    if (i < 0 ){
         i = carousel.length-1
     }
     if (i >= carousel.length){
