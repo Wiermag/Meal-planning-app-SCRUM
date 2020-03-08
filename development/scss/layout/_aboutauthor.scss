@@ -1,0 +1,36 @@
+.aboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: 1400px;
+    color: black;
+    background-color: lightgray;
+    font-family: "Open-Sans", sans-serif;
+
+    h1 {
+        color: black;
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    p {
+        margin-top: 20px;
+        line-height: 30px;
+    }
+}
+
+.authorpicture {
+    img {
+        width: 350px;
+        height: 350px;
+        padding: 95px;
+    }
+}
+
+.authornote {
+    width: 550px;
+    padding: 75px;
+    font-size: 18px;
+    align-self: flex-start;
+}

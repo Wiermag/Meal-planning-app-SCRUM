@@ -1,0 +1,131 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 250px;
+    width: 1400px;
+    background-color: #5B605F;
+    font-family: "Open-Sans", sans-serif;
+
+    h1 {
+        color: white;
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+}
+
+.informations {
+    width: 270px;
+    height: 200px;
+    padding-top: 40px;
+    font-size: 18px;
+    background-color: #5B605F;
+    color: white;
+
+    h1 {
+        padding-bottom: 15px;
+    }
+
+    p {
+        max-width: 200px;
+    }
+}
+
+.datas {
+    display: block;
+    width: 270px;
+    height: 200px;
+    padding-top: 40px;
+    font-size: 18px;
+    background-color: #5B605F;
+    color: white;
+
+    .listfooter {
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding-top: 5px;
+        line-height: 23px;
+
+    }
+}
+
+
+.datas li::before {
+    content: "\2022  ";
+}
+
+
+.logos {
+    width: 270px;
+    height: 200px;
+    padding-top: 40px;
+    font-size: 25px;
+    background-color: #5B605F;
+    margin-right: 60px;
+
+    .buttontextarea {
+        width: 480px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    input {
+        margin-top: 10px;
+        float: left;
+        width: 125px;
+    }
+
+    .btn {
+        height: 21px;
+        width: 70px;
+        font-size: 12px;
+        display: inline-block;
+        border: 0;
+        background: #E58A20;
+        color: #fff;
+        font-weight: bold;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        margin-top: 10px;
+    }
+
+
+}
+
+.icons {
+    width: 200px;
+    height: 25px;
+    display: flex;
+    margin-top: 25px;
+    padding-left: 28px;
+
+    i {
+        font-size: 25px;
+        color: white;
+    }
+}
+
+
+.fab fa-facebook-square {
+    color: white;
+    background-color: white;
+}
+
+.footer_bottom {
+    width: 1400px;
+    height: 80px;
+    background-color: #4a4a49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        color: white;
+    }
+
+    span {
+        color: #E58A20;
+    }
+}

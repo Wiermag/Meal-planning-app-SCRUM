@@ -1,0 +1,140 @@
+.new_recipe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1400px;
+    background-color: white;
+    color: orange;
+    font-size: 20px;
+    border-bottom: 2px solid lightgray;
+    margin-left: 12px;
+}
+
+.plan {
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.button {
+    background-color: #FF6600;
+    padding: 10px 6px;
+    cursor: pointer;
+    font: bold 1em 'Open Sans', sans-serif;
+    color: #FFFFFA;
+    height: 40px;
+    text-align: center;
+}
+
+.name_recipe {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    background-color: white;
+    color: grey;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.input {
+    width: 1000px;
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 98px;
+}
+
+.description_recipe {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    background-color: white;
+    color: grey;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+
+    input {
+        height: 55px;
+    }
+
+}
+
+.instrukcje {
+    display: block;
+    width: 700px;
+    background-color: white;
+    color: grey;
+    font-size: 20px;
+    padding-left: 13px;
+    margin-top: 30px;
+
+    input {
+        height: 50px;
+        width: 440px;
+        margin-left: 20px;
+    }
+}
+
+select {
+    text-align: center;
+    color: grey;
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 30px;
+    width: 210px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.instrukcje_underline {
+    width: 500px;
+    border-bottom: 1px solid grey;
+    margin-left: 1px;
+}
+
+
+.instrukcje_przepisy {
+    display: flex;
+}
+
+.input_plus {
+    display: inline-block;
+    position: relative;
+}
+
+
+.fas {
+    position: absolute;
+    left: 470px;
+    top: 15px;
+    color: white;
+    background-color: green;
+    border-radius: 20%;
+    height: 20px;
+    width: 27px;
+    cursor: pointer;
+}
+
+textarea {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+.fa-edit {
+    background-color: white;
+    color: orange;
+    position: absolute;
+    left: 400px;
+    top: 105px;
+    cursor: pointer;
+}
+
+.fa-trash {
+    background-color: white;
+    color: red;
+    position: absolute;
+    left: 430px;
+    top: 105px;
+    cursor: pointer;
+}
