@@ -7,7 +7,7 @@
 }
 
 .page-header h1 {
-    font-family: 'Charmonman', cursive;
+    font-family: $logo-font;
     color: white;
     padding: 35px;
     font-size: 30px;
@@ -22,7 +22,7 @@ span {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $main-font;
 }
 
 ul li {

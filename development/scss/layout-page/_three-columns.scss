@@ -1,4 +1,4 @@
-footer {
+.columns {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -6,7 +6,7 @@ footer {
     height: 250px;
     width: 100vw;
     background-color: #5B605F;
-    font-family: "Open-Sans", sans-serif;
+    font-family: $main-font;
 
     h1 {
         color: white;
@@ -19,7 +19,9 @@ footer {
     width: 270px;
     height: 200px;
     padding-top: 40px;
-    font-size: 18px;
+  
+    font-size: $font-size;
+    font-family: $main-font;
     background-color: #5B605F;
     color: white;
 
@@ -36,17 +38,19 @@ footer {
     width: 270px;
     height: 200px;
     padding-top: 40px;
-    font-size: 18px;
+    font-size: $font-size;
+    font-family: $main-font;
+    
     background-color: #5B605F;
     color: white;
-
-
-
-    li {
+    .datas-list {
         display: block;
+      li {
+        float: left;
         color: white;
-        font-size: 18px;
-        padding-top: 5px;
+        font-size: $font-size;
+        padding-top: 5px; 
+      }
     }
 }
 
@@ -94,31 +98,17 @@ footer {
 }
 
 .icons {
-    width: 200px;
+    width: 120px;
     height: 25px;
     display: flex;
     margin-top: 25px;
+    i {
+    color: white;
+    }
 }
 
 
 .fab fa-facebook-square {
     color: white;
     background-color: white;
-}
-
-.footer_bottom {
-    width: 100vw;
-    height: 80px;
-    background-color: #4a4a49;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    p {
-        color: white;
-    }
-
-    span {
-        color: #E58A20;
-    }
 }

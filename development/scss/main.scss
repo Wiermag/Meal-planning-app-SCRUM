@@ -3,16 +3,14 @@
 @import "./variables/colors";
 @import "./variables/fonts";
 
+@import './layout-page/header';
+@import "./layout-page/carousel";
+@import "./layout-page/cta+button";
+@import "./layout-page/features";
+@import "./layout-page/newsletter";
+@import './layout-page/aboutauthor';
+@import "./layout-page/three-columns";
+@import "./layout-page/footer";
 
-@import "./layout/carousel";
-@import "./layout/cta+button";
-@import "./layout/features";
-@import "./layout/newsletter";
-@import "./layout/about-me";
-@import "./layout/three-columns";
-@import "./layout/footer";
 
 
-@import './layout/header';
-@import './layout/aboutauthor';
-@import './layout/footer';

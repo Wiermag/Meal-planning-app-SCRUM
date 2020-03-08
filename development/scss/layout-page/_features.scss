@@ -1,0 +1,36 @@
+.features { 
+    padding: 20px;
+    background-color: $background-color;  
+}
+
+
+
+.features-list {
+   font-family: $main-font;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:#818181;
+
+li {
+    padding:20px;
+    list-style: none;
+    text-align: center;
+    i{
+        font-size: 3rem;
+        color: #818181;
+      }
+    h1 {
+        padding: 20px;
+    }
+    p {
+        width: 300px;
+        text-align: center;
+    }
+  }
+}
+
+
+
+
