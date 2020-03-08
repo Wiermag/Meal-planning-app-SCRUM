@@ -1,0 +1,17 @@
+.footer_bottom {
+    width: 100vw;
+    height: 80px;
+    background-color: #4a4a49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $main-font;
+
+    p {
+        color: white;
+    }
+
+    span {
+        color: #E58A20;
+    }
+}
