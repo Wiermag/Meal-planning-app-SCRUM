@@ -1,17 +1,437 @@
-.footer_bottom {
-    width: 100vw;
-    height: 80px;
-    background-color: #4a4a49;
+.footer_top {
+
+
+
     display: flex;
-    justify-content: center;
+
+
+
+    justify-content: space-between;
+
+
+
     align-items: center;
-    font-family: $main-font;
+
+
+
+    flex-wrap: wrap;
+
+
+
+    height: 230px;
+
+
+
+    width: 100vw;
+
+
+
+    background-color: #5B605F;
+
+
+
+    font-family: "Open-Sans", sans-serif;
+
+
+
+    font-weight: 300;
+
+
+
+
+    h1 {
+
+
+
+        color: white;
+
+
+
+        font-size: 25px;
+
+
+
+        padding-bottom: 15px;
+
+
+
+    }
+
+
+
+}
+
+
+
+
+
+.informations {
+
+
+
+    width: 270px;
+
+
+
+    height: 200px;
+
+
+
+    padding-top: 40px;
+
+
+
+    font-size: 18px;
+
+
+
+    background-color: #5B605F;
+
+
+
+    color: white;
+
+
+
+    h1 {
+
+
+
+        padding-bottom: 15px;
+
+
+
+    }
+
+
+
+
 
     p {
-        color: white;
+
+
+
+        max-width: 200px;
+
+
+
     }
 
-    span {
-        color: #E58A20;
+
+
+}
+
+
+
+
+
+.datas {
+
+
+
+    display: block;
+
+
+
+    width: 270px;
+
+
+
+    height: 200px;
+
+
+
+    padding-top: 40px;
+
+
+
+    font-size: 18px;
+
+
+
+    background-color: #5B605F;
+
+
+
+    color: white;
+
+
+
+
+
+    .listfooter {
+
+
+
+        display: block;
+
+
+
+        color: white;
+
+
+
+        font-size: 18px;
+
+
+
+        padding-top: 5px;
+
+
+
+        line-height: 23px;
+
     }
+
+
+
+}
+
+
+
+.datas li::before {
+
+
+
+    content: "\2022  ";
+
+
+
+}
+
+
+
+.logos {
+
+
+
+    width: 270px;
+
+
+
+    height: 200px;
+
+
+
+    padding-top: 40px;
+
+
+
+    font-size: 25px;
+
+
+
+    background-color: #5B605F;
+
+
+
+    margin-right: 220px;
+
+
+
+    .buttontextarea {
+
+
+
+        width: 480px;
+
+
+
+        height: 50px;
+
+
+
+        display: flex;
+
+
+
+        align-items: center;
+
+
+
+    }
+
+
+
+    input {
+
+
+
+        margin-top: 10px;
+
+
+
+        float: left;
+
+
+
+        width: 132px;
+
+
+
+    }
+
+
+
+    .btn {
+
+
+
+        height: 21px;
+
+
+
+        width: 75px;
+
+
+
+        font-size: 12px;
+
+
+
+        display: inline-block;
+
+
+
+        border: 0;
+
+
+
+        background: #E58A20;
+
+
+
+        color: #fff;
+
+
+
+        font-weight: bold;
+
+
+
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+
+
+        margin-top: 10px;
+
+
+
+    }
+
+
+
+}
+
+
+
+.icons {
+
+
+
+    width: 100px;
+
+
+
+    height: 25px;
+
+
+
+    margin-top: 25px;
+
+
+
+
+    i {
+
+
+
+        font-size: 25px;
+
+
+
+        color: white;
+
+    }
+
+
+
+}
+
+
+
+.fab fa-facebook-square {
+
+
+
+    color: white;
+
+
+
+    background-color: white;
+
+
+
+}
+
+
+
+.footer_bottom {
+
+
+
+    width: 100vw;
+
+
+
+    height: 50px;
+
+
+
+    background-color: #4a4a49;
+
+
+
+    display: flex;
+
+
+
+    justify-content: center;
+
+
+
+    align-items: center;
+
+
+
+    margin-top: 30px;
+
+
+
+    font-family: "Open-Sans", sans-serif;
+
+
+
+    p {
+
+
+
+        color: white;
+
+
+
+    }
+
+
+
+    span {
+
+
+
+        color: #E58A20;
+
+
+
+    }
+
 }
