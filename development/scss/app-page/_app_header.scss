@@ -68,7 +68,7 @@ a {
 }
 
 
-.box {
+.app-menu-left .box {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,7 +78,8 @@ a {
     color: $logo-color-txt1;
 }
 
-.box:hover {
+
+.app-menu-left .box:hover {
     border-left: 3px solid #E58A20;
     font-weight: bolder;
     box-sizing: border-box;
