@@ -1,0 +1,93 @@
+// APP HEADER STRUCTURE
+
+
+.app-header {
+    width: 100vw;
+    height: 99px;
+    background-color: #4a4a49;
+    border-bottom: 1px solid #272727;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-header h1 {
+    font-family: $logo-font;
+    color: white;
+    padding: 35px;
+    font-size: 30px;
+}
+
+.app-header h2 {
+    font-family: $main-font;
+    color: white;
+    padding: 0 15px 0 15px;
+    font-size: 30px;
+}
+
+.app-header i {
+    color: $logo-color-txt2;
+    padding: 0 35px 0 35px;
+    font-size: 40px;
+}
+
+span {
+    color: #E58A20;
+}
+
+.app-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: $main-font;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+// APP STRUCTURE
+
+.app-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-family: $main-font;
+}
+
+.app-menu-left {
+    flex: 0 0 15%;
+    background-color: $navigation-color;
+}
+.app-content {
+    background-image: url('../images/background-img.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    flex-grow: 15;
+    height: calc(100vh - 100px);
+}
+
+
+.app-menu-left .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    
+    background-color: $navigation-color;
+    color: $logo-color-txt1;
+}
+
+
+.app-menu-left .box:hover {
+    border-left: 3px solid #E58A20;
+    font-weight: bolder;
+    box-sizing: border-box;
+    p:nth-child(2) {
+        color :#E58A20;
+    }
+}
+
+p {
+    font-size: 20px;
+}
