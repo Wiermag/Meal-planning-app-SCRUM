@@ -13,7 +13,6 @@ gulp.task("serve", function(cb) {
   browserSync.init({
     server: "./development",
     index: "index.html"
-    
   });
   gulp.watch("development/scss/**/*.scss", gulp.series("sass"));
   gulp.watch("development/*.html").on("change", browserSync.reload);
