@@ -1,0 +1,64 @@
+.userNameForm-container {
+  width: 90%;
+  height: 95%;
+  margin: auto;
+  background-color: $background-color;
+  border: 1px dashed black;
+  font-size: $font-size;
+  font-weight: 600;
+  color: $navigation-color;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+#userNameForm-formText {
+  width: 415px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  }
+
+#userNameForm-header {
+  font-size: 2.6em;
+  padding: 20px;
+  font-family: $main-font;
+  }
+
+#userNameForm-first-paragraph {
+  font-size: 1.7em;
+  line-height: 1.4em;
+  }
+
+.userNameForm-form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#userName {
+  width: 300px;
+  height: 30px;
+  font-size: 1.4em;
+  margin: 10px;
+}
+
+#submitName {
+  @include button;
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+#userNameForm-second-paragraph {
+  line-height: 1.6em;
+}
+
+
+.form-display {
+  display: none;
+}
+
