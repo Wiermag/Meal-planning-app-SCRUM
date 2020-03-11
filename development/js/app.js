@@ -9,6 +9,8 @@ button.addEventListener("click", function () {
         localStorage.setItem("name", input.value);
         userNameField.innerText = localStorage.getItem("name")
     } else {
+        localStorage.removeItem("name");
+        localStorage.setItem("name", input.value);
         userNameField.innerText = localStorage.getItem("name")
     }
 });

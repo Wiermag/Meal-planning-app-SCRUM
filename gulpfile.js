@@ -11,7 +11,8 @@ gulp.task("watch", function(cb) {
 
 gulp.task("serve", function(cb) {
   browserSync.init({
-    server: "./development"
+    server: "./development",
+    index: "index.html"
   });
   gulp.watch("development/scss/**/*.scss", gulp.series("sass"));
   gulp.watch("development/*.html").on("change", browserSync.reload);
@@ -36,3 +37,26 @@ gulp.task("sass", function() {
 });
 
 gulp.task("default", gulp.series("serve"));
+
+
+// const gulp = require("gulp");
+// const sass = require("gulp-sass");
+// const sourcemaps = require('gulp-sourcemaps');
+
+// gulp.task("sass", function () {
+//   return gulp.src("development/scss/main.scss")
+//   .pipe(sourcemaps.init())
+//       .pipe(sass({
+//           outputStyle: 'expanded',
+//       }).on("error", sass.logError))
+//       .pipe(sourcemaps.write())
+//       .pipe(gulp.dest("development/css"))
+// });
+
+// gulp.task("watch", function() {
+//     gulp.watch("development/scss/**/*.scss", gulp.series("sass"));
+//   });
+
+// gulp.task("default", gulp.series("sass", "watch"));
+
+

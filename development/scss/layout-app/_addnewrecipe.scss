@@ -1,0 +1,154 @@
+.first_section {
+    width: 1400px;
+}
+
+.new_recipe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1400px;
+    background-color: white;
+    color: orange;
+    font-size: 20px;
+    border-bottom: 2px solid lightgray;
+    margin-left: 12px;
+}
+
+.recipe,
+.instruction {
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.button_recipe {
+    background-color: #FF6600;
+    padding: 10px 6px;
+    cursor: pointer;
+    font: bold 1em 'Open Sans', sans-serif;
+    color: #FFFFFA;
+    height: 40px;
+    text-align: center;
+}
+
+.name_recipe {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    background-color: white;
+    color: #5B605F;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+
+.description_recipe {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    background-color: white;
+    color: #5B605F;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+
+    input {
+        height: 55px;
+    }
+}
+
+.typing_name_recipe,
+.typing_description_recipe {
+    width: 1000px;
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 98px;
+}
+
+
+
+
+.second_section {
+    width: 1400px;
+}
+
+.instructions_recipes {
+    display: flex;
+}
+
+.instructions,
+.recipes {
+    display: block;
+    width: 700px;
+    background-color: white;
+    color: #5B605F;
+    font-size: 20px;
+    padding-left: 13px;
+    margin-top: 30px;
+
+    .typing_instruction,
+    .typing_recipe {
+        height: 50px;
+        width: 440px;
+        margin-left: 20px;
+    }
+}
+
+.recipes_underline,
+.instructions_underline {
+    width: 500px;
+    border-bottom: 1px solid grey;
+    margin-left: 1px;
+}
+
+
+
+.add_recipe,
+.add_instruction {
+    display: inline-block;
+    position: relative;
+}
+
+.instruction_button,
+.recipe_button {
+    position: absolute;
+    left: 470px;
+    top: 15px;
+    color: white;
+    background-color: green;
+    border-radius: 20%;
+    height: 20px;
+    width: 27px;
+    cursor: pointer;
+}
+
+.added_recipe,
+.added_instruction {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+
+
+.edit_instruction,
+.edit_recipe {
+    background-color: white;
+    color: orange;
+    position: absolute;
+    left: 400px;
+    top: 105px;
+    cursor: pointer;
+}
+
+
+
+.delete_instruction,
+.delete_recipe {
+    background-color: white;
+    color: red;
+    position: absolute;
+    left: 430px;
+    top: 105px;
+    cursor: pointer;
+}

@@ -1,0 +1,55 @@
+.news {
+
+  font-family: $main-font;
+
+  width: 100vw;
+
+  margin: 0 auto;
+
+  background-color: $main-color;
+
+  display: flex;
+
+  justify-content: space-evenly;
+
+  align-items: center;
+
+  height: 125px;
+
+}
+
+.news-header {
+
+  color: #FFFFFA;
+
+  padding: 10px;
+
+  font-size: 36px;
+
+}
+
+.input {
+
+  float: left;
+
+}
+
+#email {
+
+  width: 300px;
+
+  height: 50px;
+
+  padding: 10px;
+
+}
+
+#submit {
+
+  @include button;
+
+  width: 150px;
+
+  height: 50px;
+
+}

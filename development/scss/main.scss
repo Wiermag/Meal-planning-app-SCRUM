@@ -1,18 +1,23 @@
 @import "./config/reset";
+@import "./config/container";
 
 @import "./variables/colors";
 @import "./variables/fonts";
 
+@import './layout-page/header';
+@import "./layout-page/carousel";
+@import "./layout-page/cta_button";
+@import "./layout-page/features";
+@import "./layout-page/newsletter";
+@import './layout-page/aboutauthor';
+@import "./layout-page/footer";
 
-@import "./layout/carousel";
-@import "./layout/cta+button";
-@import "./layout/features";
-@import "./layout/newsletter";
-@import "./layout/about-me";
-@import "./layout/three-columns";
-@import "./layout/footer";
+@import './layout-app/addnewplan';
+@import './layout-app/addnewrecipe';
 
 
+
+@import "./app-page/app_header";
 
 
 
