@@ -1,0 +1,123 @@
+@mixin add{
+  color: #fff;
+  background-color: green;
+  border-radius: 20%;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin-right:30px;
+  border:none;
+}
+
+@mixin edit{
+  width:30px;
+  height:30px;
+  border:none;
+  color:$warningMsg-color;
+  cursor:pointer;
+  font-size:25px;
+  background-color:#fff;
+}
+@mixin delete{
+  width:30px;
+  height:30px;
+  border:none;
+  cursor:pointer;
+  font-size:25px;
+  color:$icon-bin;
+  background-color:#fff;
+}
+
+
+body{
+  font-family:$main-font;
+}
+.container-menu{
+  width:1400px;
+  border:1px dashed grey;
+  margin:30px 40px;
+}
+.plan{
+  text-transform:uppercase;
+  font-weight:600;
+  margin-top:15px;
+}
+.add{
+  @include add;
+  display:flex;
+  justify-content: end;
+  align-items: center;
+}
+.edit{
+  @include edit;
+}
+.delete{
+  @include delete;
+}
+.table-header {
+  display: flex;
+  width: 1400px;
+  font-size: 21px;
+  font-weight: 600;
+  align-items: flex-start;
+  color:$main-color;
+  text-transform:uppercase;
+  margin-left:20px;
+  padding:15px;
+}
+.second-section li:first-child{
+  width:5%;
+}
+.second-section li:last-child{
+  width:5%;
+}
+.second-section li:nth-child(2){
+  width:15%;
+}
+.second-section li:nth-child(3){
+  width:50%;
+}
+.second-section li:nth-last-child(2){
+  width:15%;
+
+}
+.second-section{
+  margin-top:20px;
+}
+
+.id{
+  font-size:18px;
+  margin:10px 0 0 40px;
+}
+.name{
+  font-size:18px;
+  margin:10px 0 0 0;
+  line-height: 20px;
+}
+.desc{
+  font-size:14px;
+  text-align: justify;
+  margin:10px 40px 10px 0;
+  line-height: 20px;
+
+}
+.week{
+  font-size:18px;
+  margin:10px 190px 0 0;
+  float:left;
+}
+.icons{
+  margin:10px 10px 0 0;
+  display:inline-block;
+}
+
+.third-section {
+  margin-bottom: 40px;
+  color: gray;
+
+  @for $i from 1 through 8 {
+    .col-#{$i} {
+      width: (100% /8) * $i;
+    }
+  }
+}
