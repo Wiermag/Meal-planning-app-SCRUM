@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-  
     <header>
 
       <div class="container-main">
@@ -21,8 +20,9 @@
         <span>Jedzonko</span>
       </h1>
       <nav class="app-menu">
-        <h2>Imię</h2>
+        <h2 id="showName">Imię</h2>
         <i class="far fa-user-circle"></i>
+        <button id="remove">usuń</button>
       </nav>
       </div>
       </div>
@@ -50,10 +50,26 @@
             </ul>
           </nav>
 
-        
+          <div class="container-main">
+            <div class="app-content">
 
-          <div class="app-content">
-            <!-- Tutaj content apkowy :) -->
+              <div class="userNameForm-container">
+                <div id="userNameForm-formText">
+                  <h1>Witaj,</h1>
+                  <p id="userNameForm-first-paragraph">
+                    wygląda na to, że jesteś tutaj pierwszy raz!
+                  </p>
+                <form class="userNameForm-form">
+                  <input type="text" name="userName" id="userName" placeholder="tutaj wpisz swoje imię">
+                  <input type="submit" name="submitName" id="submitName" value="Gotowe!">
+                </form>
+                <p id="userNameForm-second-paragraph">
+                  Podaj nam swoje imię, a my zorganizujemy dla Ciebie naszą aplikację :)
+                </p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
        </div>
