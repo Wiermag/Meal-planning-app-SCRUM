@@ -3,7 +3,11 @@ const button = document.querySelector("#submitName");
 const userNameField = document.querySelector("#showName");
 const formContainer = document.querySelector(".userNameForm-container");
 
-// localStorage.removeItem("name");
+
+localStorage.removeItem("name");
+
+const removebutton = document.querySelector("#remove");
+
 
 userNameField.innerText = localStorage.getItem("name");
 
@@ -24,3 +28,9 @@ button.addEventListener("click", function (e) {
     e.preventDefault();
     formContainer.classList.add("form-display")
 });
+
+removebutton.addEventListener("click", function () {
+    localStorage.removeItem("name");
+    formContainer.classList.remove("form-display");
+});
+
