@@ -6,7 +6,6 @@ const desktopDisplay = document.querySelector(".desktop-display");
 
 //USERNAME FORM
 
-localStorage.removeItem("name");
 
 const removebutton = document.querySelector("#remove");
 
