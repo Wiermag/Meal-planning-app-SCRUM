@@ -2,7 +2,9 @@ const input = document.querySelector("#userName");
 const button = document.querySelector("#submitName");
 const userNameField = document.querySelector("#showName");
 const formContainer = document.querySelector(".userNameForm-container");
+const desktopDisplay = document.querySelector(".desktop-display");
 
+//USERNAME FORM
 
 localStorage.removeItem("name");
 
@@ -31,6 +33,13 @@ button.addEventListener("click", function (e) {
 
 removebutton.addEventListener("click", function () {
     localStorage.removeItem("name");
+    userNameField.innerText = "" ;
     formContainer.classList.remove("form-display");
+    desktopDisplay.classList.add("desktop-display")
 });
 
+//SWITCHING DESKTOP VIBILITY - TOGGLE USERFORM/DESKTOP
+
+button.addEventListener("click", ()=> {
+    desktopDisplay.classList.remove("desktop-display")
+});
