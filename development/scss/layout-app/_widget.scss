@@ -2,8 +2,8 @@ body{
   font-family: $main-font;
 }
 .container-widget{
-  width:60%;
-  float:right;
+  display: flex;
+  justify-content: space-evenly;
 }
 @mixin info{
   width:700px;
@@ -39,4 +39,36 @@ body{
 }
 .iconX{
   margin:10px 5px 40px 0;
+}
+.icon-plus{
+  
+  color: $successMsg-color;
+  font-size:70px;
+  
+}
+
+.widget-left{
+  display: flex;
+  align-items: center;
+  
+}
+.desktop-widget-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border: 1px dashed $successMsg-color;
+  margin-right:20px;
+    i{ 
+      color: $successMsg-color;
+      font-size:70px;
+  }
+    p {
+      color: $successMsg-colorl;
+      width: 400;
+      font-size: $main-font;
+  }
 }
