@@ -2,6 +2,10 @@ const input = document.querySelector("#userName");
 const button = document.querySelector("#submitName");
 const userNameField = document.querySelector("#showName");
 const formContainer = document.querySelector(".userNameForm-container");
+
+
+localStorage.removeItem("name");
+
 const removebutton = document.querySelector("#remove");
 
 

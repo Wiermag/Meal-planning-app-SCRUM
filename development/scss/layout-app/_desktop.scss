@@ -1,0 +1,70 @@
+.desktop-plan-container {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px dashed black;
+  background-color: $background-color;
+  padding: 0 0 20px 0;
+  position: relative;
+}
+
+.desktop-plan-container h1 {
+  font-size: 1.3em;
+  margin: 20px 0 0 0;
+  color: $warningMsg-color;
+}
+
+.desktop-weekdays {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px 40px 40px;
+}
+
+.plan-element {
+  font-family: $main-font;
+  padding: 15px 0;
+  border-top: 1px solid $text-color;
+  color: $text-color;
+}
+
+.plan-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: $main-color;
+  padding: 15px 10px 15px 0;
+}
+
+.plan-element:nth-child(6) {
+  border-bottom: 1px solid $text-color;
+}
+
+.left-arrow {
+  position: absolute;
+  bottom: 7px;
+  left: 7px;
+  color: $warningMsg-color;
+}
+
+#previous {
+  position: absolute;
+  bottom: 9px;
+  left: 30px;
+  color: $warningMsg-color;
+}
+
+#next {
+  position: absolute;
+  bottom: 7px;
+  right: 30px;
+  color: $warningMsg-color;
+}
+
+.right-arrow {
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+  color: $warningMsg-color;
+}
