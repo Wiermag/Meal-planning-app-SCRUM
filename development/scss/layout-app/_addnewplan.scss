@@ -1,131 +1,108 @@
-.first-section {
-    width: 1400px;
+.schedules {
+   margin: 70px;
 }
-
-.new_plan {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1400px;
-    background-color: white;
-    color: orange;
-    font-size: 20px;
-    border-bottom: 2px solid lightgray;
-    margin-left: 12px;
+.plan{
+    &-new {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:$background-color;
+        color: orange;
+       
+        font-family: $main-font;
+        font-size: $font-size*2;
+        border-bottom: 2px solid lightgray;
+        margin-left: 12px;
+        margin-top: 10px;
+        &-button{
+            background-color: #FF6600;
+            margin: 10px;
+            font-size: $font-size ;
+            font-weight: 700;
+            color: #FFFFFA;
+            height: 40px;
+            text-align: center;
+        }
+    }
+    &-name {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        color: #5B605F;
+        font-size: $font-size*2;
+        padding-left: 10px;
+        margin-top: 20px;
+    }
+    &-description {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        color: #5B605F;
+        font-size: $font-size*2;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        input {
+            height: 55px;
+        }
+    }
+    &-week-number {
+        display: flex;
+        justify-content: flex-start;
+        background-color: white;
+        color: #5B605F;
+        font-size: 20px;
+        p {
+           padding-left: 10px;
+           padding-top: 10px;  
+        }
+        input {
+            height: 25px;
+            width: 25px;
+            margin-left: 80px;
+        }
+    }
 }
-
-.plan {
-    font-size: 25px;
-    padding: 10px;
-    margin-top: 5px;
-}
-
-.button_plan {
-    background-color: #FF6600;
-    padding: 10px 6px;
-    cursor: pointer;
-    font: bold 1em 'Open Sans', sans-serif;
-    color: #FFFFFA;
-    height: 40px;
-    text-align: center;
-}
-
-.name_plan {
-    display: flex;
-    justify-content: space-between;
-    width: 1400px;
-    background-color: white;
-    color: #5B605F;
-    font-size: 20px;
-    padding-left: 10px;
-}
-
-.typing_name_plan,
-.typing_description_plan,
-.typing_week_plan {
-    width: 1000px;
+.plan-name-value,
+.plan-description-value,
+.plan-week-number-value {
+    width: 1100px;
     height: 25px;
     margin-top: 10px;
     margin-right: 98px;
 }
 
-.description_plan {
+.meals{
     display: flex;
-    justify-content: space-between;
-    width: 1400px;
-    background-color: white;
-    color: #5B605F;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 170px;
     font-size: 20px;
-    padding-left: 10px;
-    margin-bottom: 10px;
-
-    input {
-        height: 55px;
-    }
-}
-
-.week_number {
-    display: flex;
-    justify-content: flex-start;
-    width: 1400px;
-    background-color: white;
-    color: #5B605F;
-    font-size: 20px;
-    padding-left: 13px;
-    margin-top: 30px;
-
-    input {
-        height: 25px;
-        width: 25px;
-        margin-left: 115px;
-    }
-}
-
-.second-section {
-    width: 1400px;
-}
-
-.meals {
-    display: flex;
-    justify-content: space-between;
-    width: 950px;
-    margin-left: 280px;
-    font-size: 21px;
     font-weight: 700;
-    text-align: center;
-
-    .meal {
-        width: 75px;
+    li {
+        color: $main-color;
         text-align: center;
-        color: #5B605F;
+      padding: 10px;
     }
 }
-
-
-
 .meals_aboveline {
-    width: 1090px;
-    border-bottom: 1px solid grey;
-    margin-left: 235px;
+    border-bottom: 1px solid $text-color;
+    margin-left: 270px;
     padding-top: 50px;
 }
-
-
-
 .meals_underline {
-    width: 1300px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid $text-color;
     margin-left: 25px;
 }
+
+
 
 @for $i from 1 through 12 {
     .col-#{$i} {
         width: (100% / 12) * $i;
     }
 }
-
 %clearfix {
-
     &:after,
     &:before {
         display: table;
@@ -135,8 +112,7 @@
 }
 
 .third-section {
-    width: 1350px;
-
+  
     .row {
         @extend %clearfix;
         margin-right: 35px;
@@ -148,7 +124,6 @@
         }
     }
 }
-
 select {
     text-align: center;
     color: #5B605F;
@@ -159,7 +134,6 @@ select {
     background-color: white;
     border-radius: 10px;
 }
-
 .day {
     text-align: center;
     background: white;

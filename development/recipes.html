@@ -17,51 +17,50 @@
 </head>
 
 <body>
+  <div class="recipes">
   <section>
-    <div class="first_section">
-      <div class="new_recipe">
-        <p class="recipe">NOWY PRZEPIS</p>
-        <button class="button_recipe">ZAPISZ I ZAMKNIJ</button>
+    <div class="first-section-recipes">
+      <div class="recipe-new">
+        <p>NOWY PRZEPIS</p>
+        <button class="recipe-button">ZAPISZ I ZAMKNIJ</button>
       </div>
 
-      <div class="name_recipe">
-        <p class="recipe">Nazwa przepisu</p>
-        <input type="text" class="typing_name_recipe" />
+      <div class="recipe-name">
+        <p>Nazwa przepisu</p>
+        <input type="text" class="recipe-name-value" />
       </div>
 
-      <div class="description_recipe">
-        <p class="recipe">Opis przepisu</p>
-        <input type="text" class="typing_description_recipe" />
+      <div class="recipe-description">
+        <p>Opis przepisu</p>
+        <input type="text" class="recipe-description-value" />
       </div>
     </div>
   </section>
-  <section>
 
-    <div class="second_section">
-      <div class="instructions_recipes">
+  <section>
+    <div class="second-section-recipes">
         <div class="instructions">
-          <p class="instruction">Instrukcje</p>
-          <div class="instructions_underline"></div>
-          <div class="add_instruction">
-            <input class="typing_instruction" type="text" />
-            <button class="fas fa-plus instruction_button"></button>
-            <textarea class="added_instruction" rows="10" cols="53"></textarea>
+          <p>Instrukcje</p>
+          <div class="underline"></div>
+          <div class="instruction-add">
+            <input class="instruction-value" type="text" />
+            <button class="fas fa-plus instruction-plus"></button>
+            <div class="instruction-value-text" rows="10" cols="53"></div>
           </div>
         </div>
 
-        <div class="recipes">
-          <p class="recipe">Składniki</p>
-          <div class="recipes_underline"></div>
-          <div class="add_recipe">
-            <input class="typing_recipe" type="text" />
-            <button class="fas fa-plus recipe_button"></button>
-            <textarea class="added_recipe" rows="10" cols="53"></textarea>
+        <div class="components">
+          <p>Składniki</p>
+          <div class="underline"></div>
+          <div class="component-add">
+            <input class="component-value" type="text" />
+            <button class="fas fa-plus component-plus"></button>
+            <div class="component-value-text" rows="10" cols="53"></div>
           </div>
         </div>
       </div>
-    </div>
   </section>
-
+</div>
   <script src="./js/index.js"></script>
 
 </body>
