@@ -3,7 +3,7 @@ body{
 }
 .container-widget{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 @mixin info{
   width:700px;
@@ -41,10 +41,8 @@ body{
   margin:10px 5px 40px 0;
 }
 .icon-plus{
-  
   color: $successMsg-color;
   font-size:70px;
-  
 }
 
 .widget-left{
@@ -65,10 +63,10 @@ body{
     i{ 
       color: $successMsg-color;
       font-size:70px;
-  }
+    }
     p {
       color: $successMsg-color;
       width: 400;
       font-size: $main-font;
-  }
+    }
 }
