@@ -1,5 +1,5 @@
 .desktop-plan-container {
-  width: 85%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,14 +29,12 @@
   border-top: 1px solid $text-color;
   color: $text-color;
 }
-
 .plan-header {
   font-size: 1.5em;
   font-weight: bold;
   color: $main-color;
   padding: 15px 10px 15px 0;
 }
-
 .plan-element:nth-child(6) {
   border-bottom: 1px solid $text-color;
 }
@@ -67,4 +65,13 @@
   bottom: 7px;
   right: 7px;
   color: $warningMsg-color;
+}
+
+#desktop-flex {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.desktop-display {
+  display: none;
+
 }
