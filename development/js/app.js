@@ -4,8 +4,12 @@ const userNameField = document.querySelector("#showName");
 const formContainer = document.querySelector(".userNameForm-container");
 const desktopDisplay = document.querySelector("#desktop-display");
 
-const desktopRecipes = document.querySelector("#recipesAdd")
-const recipesList = document.querySelector(".container-recipes-list")
+const desktopRecipes = document.querySelector("#recipesAdd");
+const recipesList = document.querySelector(".container-recipes-list");
+
+const desktopSchedules = document.querySelector("#schedulesAdd");
+const schedulesList = document.querySelector(".container-schedules-list")
+
 //USERNAME FORM
 
 
@@ -49,5 +53,15 @@ button.addEventListener("click", ()=> {
 
 desktopRecipes.addEventListener("click", () => {
     desktopDisplay.classList.add("invisible"),
-    recipesList.classList.remove("invisible")
+    recipesList.classList.remove("invisible"),
+    schedulesList.classList.add("invisible")
+})
+
+//SWITCHING DESKTOP VIBILITY - SHOW SCHEDULES LIST
+
+desktopSchedules.addEventListener("click", () => {
+    desktopDisplay.classList.add("invisible"),
+    recipesList.classList.add("invisible"),
+    schedulesList.classList.remove("invisible")
+
 })
