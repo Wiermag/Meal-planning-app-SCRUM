@@ -13,77 +13,78 @@
     <link href="https://fontawesome.com/icons/window-close?style=solid" rel="stylesheet">
     <link href="https://fontawesome.com/icons/info-circle?style=solid" rel="stylesheet">
     <link href="https://fontawesome.com/icons/exclamation-circle?style=solid" rel="stylesheet">
-
     <link rel="stylesheet" href="./css/main.css" />
   </head>
+
+  
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman|Open+Sans:300,400,600,700,800&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
   <body>
     <header>
-
       <div class="container-main">
         <div class="app-header">
-      <h1>Zaplanuj
-        <span class="logo-header">Jedzonko</span>
-      </h1>
-      <nav class="app-menu">
-        <h2 id="showName">Imię</h2>
-        <i class="far fa-user-circle"></i>
-        <button id="remove">usuń</button>
-      </nav>
+          <h1>Zaplanuj
+            <span class="logo-header">Jedzonko</span>
+          </h1>
+          <nav class="app-menu">
+            <h2 id="showName">Imię</h2>
+            <i class="far fa-user-circle"></i>
+            <button id="remove">usuń</button>
+          </nav>
+        </div>
       </div>
-      </div>
-      
     </header>
 
     <section>
-       <div class="container-main">
-         <div class="app-container">
-      
-          <nav class="app-menu-left">
-            <ul class="item-list">
-              <li class="box">
-               <a href="./app.html"><p>Pulpit</p></a> <p>></p>
-              </li>
-              <li class="box">
-                <a href="./recipes.html"><p>Przepis</p></a> <p>></p>
-              </li>
-              <li class="box">
-                <a href="./schedules.html"><p>Plany</p></a> <p>></p>
-                
-              </li>
-            </ul>
-          </nav>
+      <div class="container-main app-container ">
+         
+        <nav class="app-menu-left">
+              <ul>
+                <li class="box">
+                <a href="./app.html"><p>Pulpit</p></a> <p>></p>
+                </li>
+                <li class="box">
+                <p id="recipesAdd">Przepis</p></a> <p>></p>
+                </li>
+                <li class="box">
+                  <p id="schedulesAdd">Plany</p></a> <p>></p>
+                </li>
+              </ul>
+        </nav>
 
-          <div class="container-main">
-            <div class="app-content">
-
-              <div class="userNameForm-container">
+        <div class="app-content">
+            <div class="userNameForm-container">
                 <div id="userNameForm-formText">
-                  <h1>Witaj,</h1>
-                  <p id="userNameForm-first-paragraph">
-                    wygląda na to, że jesteś tutaj pierwszy raz!
-                  </p>
-                <form class="userNameForm-form">
-                  <input type="text" name="userName" id="userName" placeholder="tutaj wpisz swoje imię">
-                  <input type="submit" name="submitName" id="submitName" value="Gotowe!">
-                </form>
-                <p id="userNameForm-second-paragraph">
-                  Podaj nam swoje imię, a my zorganizujemy dla Ciebie naszą aplikację :)
-                </p>
+                    <h1>Witaj,</h1>
+                    <p id="userNameForm-first-paragraph">
+                      wygląda na to, że jesteś tutaj pierwszy raz!
+                    </p>
+                    <form class="userNameForm-form">
+                      <input type="text" name="userName" id="userName" placeholder="tutaj wpisz swoje imię">
+                      <input type="submit" name="submitName" id="submitName" value="Gotowe!">
+                    </form>
+                    <p id="userNameForm-second-paragraph">
+                      Podaj nam swoje imię, a my zorganizujemy dla Ciebie naszą aplikację :)
+                    </p>
                 </div>
-              </div>
-
-
-              <div class="desktop-display" id="desktop-flex">
+            </div>
             
-              <section class="container-widget">
+
+            <div id="desktop-display" >
+              <section class="container-widget ">
                 <div class= widget-left>
                     <div class="desktop-widget-button">
-                        <a href="./recipes.html"><i class="far fa-plus-square"></i></a>
-                        <p>dodaj przepis</p>
+                       <a href="./recipes.html"><i class="far fa-plus-square"></i></a>
+                       <p>dodaj przepis</p>
                     </div>
                     <div class="desktop-widget-button">
                       <a href="./schedules.html"><i class="far fa-plus-square"></i></a>
-                        <p>dodaj plan</p>
+                      <p>dodaj plan</p>
                     </div>
                 </div>
                 
@@ -106,70 +107,68 @@
                         <div class="iconX"><i class="fas fa-window-close"></i></div>
                     </div>
                 </div>
-            </section>
+              </section>
 
-          
-          
-                <div class="desktop-plan-container">
-                  <h1>
+              <div class="desktop-plan-container">
+                <h1>
                     Twój plan na (numer tygodnia) tydzień
-                  </h1>
-                  <div class="desktop-weekdays">
+                </h1>
+                <div class="desktop-weekdays">
                     <div class="plan-row">
-                      <p class="plan-element plan-header">Poniedziałek</p>
-                      <p class="plan-element">sniadanie</p>
-                      <p class="plan-element">drugie</br>sniadanie</p>
-                      <p class="plan-element">zupa</p>
-                      <p class="plan-element">drugie danie</p>
-                      <p class="plan-element">kolacja</p>
+                        <p class="plan-header">Poniedziałek</p>
+                        <p>sniadanie</p>
+                        <p>drugie</br>sniadanie</p>
+                        <p>zupa</p>
+                        <p>drugie danie</p>
+                        <p>kolacja</p>
                     </div>
                     <div class="plan-row">
-                      <p class="plan-element plan-header">Wtorek</p>
-                      <p class="plan-element">sniadanie</p>
-                      <p class="plan-element">drugie</br>sniadanie</p>
-                      <p class="plan-element">zupa</p>
-                      <p class="plan-element">drugie danie</p>
-                      <p class="plan-element">kolacja</p>
+                        <p class="plan-header">Wtorek</p>
+                        <p>sniadanie</p>
+                        <p>drugie</br>sniadanie</p>
+                        <p>zupa</p>
+                        <p>drugie danie</p>
+                        <p>kolacja</p>
                     </div>
                     <div class="plan-row">
-                      <p class="plan-element plan-header">Środa</p>
-                      <p class="plan-element">sniadanie</p>
-                      <p class="plan-element">drugie</br>sniadanie</p>
-                      <p class="plan-element">zupa</p>
-                      <p class="plan-element">drugie danie</p>
-                      <p class="plan-element">kolacja</p>
+                        <p class="plan-header">Środa</p>
+                        <p>sniadanie</p>
+                        <p>drugie</br>sniadanie</p>
+                        <p>zupa</p>
+                        <p>drugie danie</p>
+                        <p>kolacja</p>
                     </div>
                     <div class="plan-row">
-                      <p class="plan-element plan-header">Czwartek</p>
-                      <p class="plan-element">sniadanie</p>
-                      <p class="plan-element">drugie</br>sniadanie</p>
-                      <p class="plan-element">zupa</p>
-                      <p class="plan-element">drugie danie</p>
-                      <p class="plan-element">kolacja</p>
+                        <p class="plan-header">Czwartek</p>
+                        <p>sniadanie</p>
+                        <p>drugie</br>sniadanie</p>
+                        <p>zupa</p>
+                        <p>drugie danie</p>
+                        <p>kolacja</p>
                     </div>
                     <div class="plan-row">
-                      <p class="plan-element plan-header">Piątek</p>
-                      <p class="plan-element">sniadanie</p>
-                      <p class="plan-element">drugie</br>sniadanie</p>
-                      <p class="plan-element">zupa</p>
-                      <p class="plan-element">drugie danie</p>
-                      <p class="plan-element">kolacja</p>
+                        <p class="plan-header">Piątek</p>
+                        <p>sniadanie</p>
+                        <p>drugie</br>sniadanie</p>
+                        <p>zupa</p>
+                        <p>drugie danie</p>
+                        <p>kolacja</p>
                     </div>
                     <div class="plan-row">
-                      <p class="plan-element plan-header">Sobota</p>
-                      <p class="plan-element">sniadanie</p>
-                      <p class="plan-element">drugie</br>sniadanie</p>
-                      <p class="plan-element">zupa</p>
-                      <p class="plan-element">drugie danie</p>
-                      <p class="plan-element">kolacja</p>
+                        <p class="plan-header">Sobota</p>
+                        <p>sniadanie</p>
+                        <p>drugie</br>sniadanie</p>
+                        <p>zupa</p>
+                        <p>drugie danie</p>
+                        <p>kolacja</p>
                     </div>
                     <div class="plan-row">
-                      <p class="plan-element plan-header">Niedziela</p>
-                      <p class="plan-element">sniadanie</p>
-                      <p class="plan-element">drugie</br>sniadanie</p>
-                      <p class="plan-element">zupa</p>
-                      <p class="plan-element">drugie danie</p>
-                      <p class="plan-element">kolacja</p>
+                      <p class="plan-header">Niedziela</p>
+                      <p>sniadanie</p>
+                      <p>drugie</br>sniadanie</p>
+                      <p>zupa</p>
+                      <p>drugie danie</p>
+                      <p>kolacja</p>
                     </div>
                   </div>
 
@@ -178,13 +177,69 @@
 
                   <span id="next">następny</span>
                   <i class="fas fa-angle-double-right right-arrow"></i>
-                </div>
               </div>
             </div>
-          </div>
+
+           <section class="container-recipes-list invisible">
+
+              <div class="first-section-menu">
+                  <div class="recipes-list">
+                      <p>LISTA PRZEPISÓW</p>
+                      <button class="fas fa-plus plus-recipes"></button>
+                  </div>
+              </div>
+        
+              <section>
+                  <div class="second-section-menu">
+                      <div class="meals_underline"></div>
+                      <ul class="table-header">
+                          <li>Id</li>
+                          <li>Nazwa</li>
+                          <li>Opis</li>
+                          <li>Akcje</li>
+                      </ul>
+                      <div class="meals_underline"></div>
+                  </div>
+              </section>
+        
+              <section>
+                 <div class="third-section-menu">
+                    <div class="row">
+                            <div class="id">1</div>
+                            <div class="name">Zapiekanka z ziemniakami i brukselką</div>
+                            <div class="desc">
+                                      Mamusina najlepsza zapiekanka pod słońcem. Można ją podać jako główne danie albo jako kolację. W zapiekance możesz użyć również kiełbasy paprykowej sprawi ona, że zapiekanka będzie ostrzejsza w smaku. Zgodnie z zaleceniami Makłowicza, podawać z dobrze dobranym winkiem ;)
+                            </div>
+                          
+                            <div class="icons">
+                                  <button class="fas fa-edit edit"></button>
+                                  <button class="fas fa-trash delete"></button>
+                            </div>
+                    </div> 
+                    <div class="meals_underline"></div>
+          
+                    <div class="row">
+                            <div class="id">2</div>
+                            <div class="name">Zapiekanka z ziemniakami i brukselką</div>
+                            <div class="desc">
+                                Mamusina najlepsza zapiekanka pod słońcem. Można ją podać jako główne danie albo jako kolację. W zapiekance możesz użyć również kiełbasy paprykowej sprawi ona, że zapiekanka będzie ostrzejsza w smaku. Zgodnie z zaleceniami Makłowicza, podawać z dobrze dobranym winkiem ;)
+                            </div>
+                    
+                            <div class="icons">
+                              <button class="fas fa-edit edit"></button>
+                              <button class="fas fa-trash delete"></button>
+                            </div>
+                    </div> 
+                    <div class="meals_underline"></div>
+                </div>
+              </section>
+          </section>
+
         </div>
-       </div>
+      </div>
     </section>
+
+   
 
     <script src="./js/app.js"></script>
   </body>

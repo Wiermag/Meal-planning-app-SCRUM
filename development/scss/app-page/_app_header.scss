@@ -13,7 +13,7 @@
     font-family: $logo-font;
     color: white;
     padding: 35px;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .app-header h2 {
@@ -60,7 +60,7 @@ a {
     background-repeat: repeat;
     flex-grow: 15;
     min-height: 100vh;
-    padding: 20px 0;
+    padding: 50px 0;
 }
 
 
@@ -72,7 +72,10 @@ a {
     
     background-color: $navigation-color;
     color: $logo-color-txt1;
-
+    p {
+        cursor: pointer;
+        font-size: 20px;
+    }
 }
 
 
@@ -83,9 +86,4 @@ a {
     p:nth-child(2) {
         color :#E58A20;
     };
-    
-}
-
-p {
-    font-size: 20px;
 }

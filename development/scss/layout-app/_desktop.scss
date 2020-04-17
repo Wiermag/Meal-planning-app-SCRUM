@@ -22,13 +22,13 @@
   align-items: center;
   padding: 20px 40px 40px 40px;
 }
-
-.plan-element {
+.plan-row p {
   font-family: $main-font;
-  padding: 15px 0;
+  padding: 15px 15px;
   border-top: 1px solid $text-color;
   color: $text-color;
 }
+
 .plan-header {
   font-size: 1.5em;
   font-weight: bold;
@@ -67,11 +67,7 @@
   color: $warningMsg-color;
 }
 
-#desktop-flex {
+#desktop-display {
   max-width: 1200px;
   margin: 0 auto;
-}
-.desktop-display {
-  display: none;
-
 }
