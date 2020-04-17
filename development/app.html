@@ -15,9 +15,17 @@
     <link href="https://fontawesome.com/icons/exclamation-circle?style=solid" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" />
   </head>
+
+  
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman|Open+Sans:300,400,600,700,800&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
   <body>
     <header>
-
       <div class="container-main">
         <div class="app-header">
           <h1>Zaplanuj
@@ -30,7 +38,6 @@
           </nav>
         </div>
       </div>
-
     </header>
 
     <section>
@@ -42,10 +49,10 @@
                 <a href="./app.html"><p>Pulpit</p></a> <p>></p>
                 </li>
                 <li class="box">
-                  <a href="#"><p>Przepis</p></a> <p>></p>
+                <p id="recipesAdd">Przepis</p></a> <p>></p>
                 </li>
                 <li class="box">
-                  <a href="#"><p>Plany</p></a> <p>></p>
+                  <p id="schedulesAdd">Plany</p></a> <p>></p>
                 </li>
               </ul>
         </nav>
@@ -68,8 +75,8 @@
             </div>
             
 
-            <div id="desktop-flex">
-              <section class="container-widget">
+            <div id="desktop-display" >
+              <section class="container-widget ">
                 <div class= widget-left>
                     <div class="desktop-widget-button">
                        <a href="./recipes.html"><i class="far fa-plus-square"></i></a>
@@ -173,7 +180,60 @@
               </div>
             </div>
 
+           <section class="container-recipes-list invisible">
+
+              <div class="first-section-menu">
+                  <div class="recipes-list">
+                      <p>LISTA PRZEPISÓW</p>
+                      <button class="fas fa-plus plus-recipes"></button>
+                  </div>
+              </div>
         
+              <section>
+                  <div class="second-section-menu">
+                      <div class="meals_underline"></div>
+                      <ul class="table-header">
+                          <li>Id</li>
+                          <li>Nazwa</li>
+                          <li>Opis</li>
+                          <li>Akcje</li>
+                      </ul>
+                      <div class="meals_underline"></div>
+                  </div>
+              </section>
+        
+              <section>
+                 <div class="third-section-menu">
+                    <div class="row">
+                            <div class="id">1</div>
+                            <div class="name">Zapiekanka z ziemniakami i brukselką</div>
+                            <div class="desc">
+                                      Mamusina najlepsza zapiekanka pod słońcem. Można ją podać jako główne danie albo jako kolację. W zapiekance możesz użyć również kiełbasy paprykowej sprawi ona, że zapiekanka będzie ostrzejsza w smaku. Zgodnie z zaleceniami Makłowicza, podawać z dobrze dobranym winkiem ;)
+                            </div>
+                          
+                            <div class="icons">
+                                  <button class="fas fa-edit edit"></button>
+                                  <button class="fas fa-trash delete"></button>
+                            </div>
+                    </div> 
+                    <div class="meals_underline"></div>
+          
+                    <div class="row">
+                            <div class="id">2</div>
+                            <div class="name">Zapiekanka z ziemniakami i brukselką</div>
+                            <div class="desc">
+                                Mamusina najlepsza zapiekanka pod słońcem. Można ją podać jako główne danie albo jako kolację. W zapiekance możesz użyć również kiełbasy paprykowej sprawi ona, że zapiekanka będzie ostrzejsza w smaku. Zgodnie z zaleceniami Makłowicza, podawać z dobrze dobranym winkiem ;)
+                            </div>
+                    
+                            <div class="icons">
+                              <button class="fas fa-edit edit"></button>
+                              <button class="fas fa-trash delete"></button>
+                            </div>
+                    </div> 
+                    <div class="meals_underline"></div>
+                </div>
+              </section>
+          </section>
 
         </div>
       </div>

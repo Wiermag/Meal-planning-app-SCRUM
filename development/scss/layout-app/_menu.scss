@@ -1,0 +1,108 @@
+@mixin icons {
+  height: 30px;
+  width: 30px;
+  border:none;
+  cursor:pointer;
+  font-size:20px;
+}
+
+body{
+  font-family:$main-font;
+}
+
+.container-recipes-list{
+  border:1px dashed grey;
+  max-width: 1200px;
+  background: $background-color;
+  margin: 0 auto;
+}
+
+.recipes-list {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  p {
+    padding: 30px;
+    font-size: $font-size * 2;
+    color: $logo-color-txt2; 
+    font-weight:600;
+    text-align: center;
+  }
+}
+
+.plus-recipes{
+  @include icons;
+  background-color: green;
+  border-radius: 20%;
+  margin: 25px;
+  align-items: center;
+  color: white;
+}
+.edit{
+  @include icons;
+  color:$warningMsg-color;
+  background-color:#fff;
+}
+.delete{
+  @include icons;
+  color:$icon-bin;
+  background-color:#fff;
+}
+.table-header {
+  display: flex;
+  font-size: 21px;
+  font-weight: 600;
+  align-items: flex-start;
+  color:$main-color;
+  text-transform:uppercase;
+  margin-left:20px;
+  padding:15px;
+}
+.second-section-menu li {
+    &:first-child{
+      width:6%;
+    }
+    &:last-child{
+      width:10%;
+    }
+    &:nth-child(2){
+      width: 15%;
+    }
+    &:nth-child(3){
+      width:90%;
+    }
+}
+.second-section-menu{
+  margin-top:20px;
+}
+
+.id{
+  font-size:18px;
+  margin:10px 0 0 40px;
+  width:10%;
+}
+.name{
+  font-size:18px;
+  margin:10px 0 50px 0;
+  line-height: 20px;
+}
+.desc{
+  font-size:14px;
+  margin:10px 40px 10px 0;
+  line-height: 20px;
+}
+.icons{
+  margin:10px 10px 0 0;
+}
+
+
+.third-section-menu {
+  overflow: scroll;
+  height: 600px;
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    color: gray;
+  }
+}

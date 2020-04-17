@@ -2,8 +2,10 @@ const input = document.querySelector("#userName");
 const button = document.querySelector("#submitName");
 const userNameField = document.querySelector("#showName");
 const formContainer = document.querySelector(".userNameForm-container");
-const desktopDisplay = document.querySelector(".invisible");
+const desktopDisplay = document.querySelector("#desktop-display");
 
+const desktopRecipes = document.querySelector("#recipesAdd")
+const recipesList = document.querySelector(".container-recipes-list")
 //USERNAME FORM
 
 
@@ -43,4 +45,9 @@ button.addEventListener("click", ()=> {
     desktopDisplay.classList.remove("invisible")
 });
 
+//SWITCHING DESKTOP VIBILITY - SHOW RECIPES LIST
 
+desktopRecipes.addEventListener("click", () => {
+    desktopDisplay.classList.add("invisible"),
+    recipesList.classList.remove("invisible")
+})
