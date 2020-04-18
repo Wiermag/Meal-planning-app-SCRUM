@@ -4,8 +4,15 @@ const userNameField = document.querySelector("#showName");
 const formContainer = document.querySelector(".userNameForm-container");
 const desktopDisplay = document.querySelector("#desktop-display");
 
-const desktopRecipes = document.querySelector("#recipesAdd")
-const recipesList = document.querySelector(".container-recipes-list")
+const desktopRecipes = document.querySelector("#recipesAdd");
+const recipesList = document.querySelector(".container-recipes-list");
+
+const desktopSchedules = document.querySelector("#schedulesAdd");
+const schedulesList = document.querySelector(".container-schedules-list")
+
+const desktop = document.querySelector("#desktop");
+
+
 //USERNAME FORM
 
 
@@ -36,7 +43,9 @@ removebutton.addEventListener("click", function () {
     localStorage.removeItem("name");
     userNameField.innerText = "" ;
     formContainer.classList.remove("form-display");
-    desktopDisplay.classList.add("invisible")
+    desktopDisplay.classList.add("invisible");
+    recipesList.classList.add("invisible");
+    schedulesList.classList.add("invisible");
 });
 
 //SWITCHING DESKTOP VIBILITY - TOGGLE USERFORM/DESKTOP
@@ -48,6 +57,28 @@ button.addEventListener("click", ()=> {
 //SWITCHING DESKTOP VIBILITY - SHOW RECIPES LIST
 
 desktopRecipes.addEventListener("click", () => {
-    desktopDisplay.classList.add("invisible"),
-    recipesList.classList.remove("invisible")
+    recipesList.classList.remove("invisible");
+    formContainer.classList.add("form-display");
+    desktopDisplay.classList.add("invisible");
+    schedulesList.classList.add("invisible");
 })
+
+//SWITCHING DESKTOP VIBILITY - SHOW SCHEDULES LIST
+
+desktopSchedules.addEventListener("click", () => {
+    schedulesList.classList.remove("invisible");
+    formContainer.classList.add("form-display");
+    desktopDisplay.classList.add("invisible");
+    recipesList.classList.add("invisible");
+  
+})
+
+//SWITCHING DESKTOP VIBILITY - SHOW DESkTOP
+    desktop.addEventListener("click", () => {
+        desktopDisplay.classList.remove("invisible");
+        formContainer.classList.add("form-display");
+        recipesList.classList.add("invisible");
+        schedulesList.classList.add("invisible");
+    })
+    
+

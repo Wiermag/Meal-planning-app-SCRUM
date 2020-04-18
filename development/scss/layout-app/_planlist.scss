@@ -2,21 +2,22 @@
   height: 30px;
   width: 30px;
   border:none;
-  cursor:pointer;
+  cursor: pointer;
   font-size:20px;
 }
 
-.container-recipes-list{
+.container-schedules-list{
   border:1px dashed grey;
   max-width: 1200px;
   background: $background-color;
   margin: 0 auto;
 }
-
-.recipes-list {
+.plan-list {
   display: flex;
   justify-content: space-between;
   height: 60px;
+  
+
   p {
     padding: 30px;
     font-size: $font-size * 2;
@@ -25,14 +26,12 @@
     text-align: center;
   }
 }
-
-.plus-recipes{
+.plan-add {
   @include icon-button;
+  color: #fff;
   background-color: green;
   border-radius: 20%;
-  margin: 25px;
-  align-items: center;
-  color: white;
+  margin:25px;
   display:flex;
   justify-content: end;
   align-items: center;
@@ -40,67 +39,61 @@
 .edit{
   @include icon-button;
   color:$warningMsg-color;
+  cursor:pointer;
+  font-size:25px;
   background-color:#fff;
 }
 .delete{
   @include icon-button;
+  font-size:25px;
   color:$icon-bin;
   background-color:#fff;
 }
-.table-header-menu {
+.table-header-plan {
   height: 40px;
   display: grid;
-  grid-template-columns: 0.5fr 1fr 3fr 1fr;
+  grid-template-columns: 0.5fr 1fr 3fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 9px 1px;
   grid-template-areas: ". . . . .";
+
   font-size: $font-size*1.5;
   font-weight: 600;
   align-items: center;
   color:$main-color;
   li {
     &:first-child, 
-    &:nth-child(4){
+    &:nth-child(4) {
       text-align: center;
     }
   }
 }
 
-.second-section-menu{
+.second-section-plan-list {
   margin-top:20px;
 }
-.id{
-  font-size:$font-size*1.5;
+
+.week{
+  font-size:$font-size;
   text-align: center;
 }
-.name{
-  font-size:18px;
-  line-height: 20px;
-}
-.desc{
-  font-size:$font-size;
-  text-align: justify;
-  line-height: 20px;
-}
-.icon-menu {
+.icon-plan-list{
   margin:10px 10px 0 0;
   display:flex;
-  justify-content: center;
   text-align: center;
 }
 
-.third-section-menu {
-  overflow: auto;
-  height: 600px;
-  .row {
+.third-section-plan-list {
+ overflow: auto;
+ height: 600px;
+  .row { 
     display: grid;
-    grid-template-columns: 0.5fr 1fr 3fr 1fr;
+    grid-template-columns: 0.5fr 1fr 3fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 9px 1px;
     grid-template-areas: ". . . . .";
 
     margin: 20px 0;
     color: gray;
-  }
+    }
 }
-

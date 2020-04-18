@@ -28,9 +28,9 @@
     <header>
       <div class="container-main">
         <div class="app-header">
-          <h1>Zaplanuj
-            <span class="logo-header">Jedzonko</span>
-          </h1>
+          <a href="./index.html">
+            <h1>Zaplanuj<span class="logo-header">Jedzonko</span></h1>
+          </a>
           <nav class="app-menu">
             <h2 id="showName">Imię</h2>
             <i class="far fa-user-circle"></i>
@@ -46,10 +46,10 @@
         <nav class="app-menu-left">
               <ul>
                 <li class="box">
-                <a href="./app.html"><p>Pulpit</p></a> <p>></p>
+                  <p id="desktop">Pulpit</p> <p>></p>
                 </li>
                 <li class="box">
-                <p id="recipesAdd">Przepis</p></a> <p>></p>
+                 <p id="recipesAdd">Przepis</p> <p>></p>
                 </li>
                 <li class="box">
                   <p id="schedulesAdd">Plany</p></a> <p>></p>
@@ -74,8 +74,7 @@
                 </div>
             </div>
             
-
-            <div id="desktop-display" >
+            <div id="desktop-display" class="invisible">
               <section class="container-widget ">
                 <div class= widget-left>
                     <div class="desktop-widget-button">
@@ -91,7 +90,7 @@
                 <div>
                     <div class="info info-1">
                         <div class="icon"><i class="fas fa-info-circle"></i></div>
-                        <div class="text">Masz już 99 przepisów, niezle!</div>
+                        <div class="text">Masz już 99 przepisów, nieźle!</div>
                         <div class="iconX"><i class="fas fa-window-close"></i></div>
                     </div>
                     <div class="info info-2">
@@ -178,7 +177,7 @@
                   <span id="next">następny</span>
                   <i class="fas fa-angle-double-right right-arrow"></i>
               </div>
-            </div>
+           </div>
 
            <section class="container-recipes-list invisible">
 
@@ -187,16 +186,17 @@
                       <p>LISTA PRZEPISÓW</p>
                       <button class="fas fa-plus plus-recipes"></button>
                   </div>
+                  <div class="meals_underline"></div>
               </div>
         
               <section>
                   <div class="second-section-menu">
                       <div class="meals_underline"></div>
-                      <ul class="table-header">
-                          <li>Id</li>
-                          <li>Nazwa</li>
-                          <li>Opis</li>
-                          <li>Akcje</li>
+                      <ul class="table-header-menu">
+                          <li>ID</li>
+                          <li>NAZWA</li>
+                          <li>OPIS</li>
+                          <li>AKCJE</li>
                       </ul>
                       <div class="meals_underline"></div>
                   </div>
@@ -211,7 +211,7 @@
                                       Mamusina najlepsza zapiekanka pod słońcem. Można ją podać jako główne danie albo jako kolację. W zapiekance możesz użyć również kiełbasy paprykowej sprawi ona, że zapiekanka będzie ostrzejsza w smaku. Zgodnie z zaleceniami Makłowicza, podawać z dobrze dobranym winkiem ;)
                             </div>
                           
-                            <div class="icons">
+                            <div class="icon-menu">
                                   <button class="fas fa-edit edit"></button>
                                   <button class="fas fa-trash delete"></button>
                             </div>
@@ -225,15 +225,103 @@
                                 Mamusina najlepsza zapiekanka pod słońcem. Można ją podać jako główne danie albo jako kolację. W zapiekance możesz użyć również kiełbasy paprykowej sprawi ona, że zapiekanka będzie ostrzejsza w smaku. Zgodnie z zaleceniami Makłowicza, podawać z dobrze dobranym winkiem ;)
                             </div>
                     
-                            <div class="icons">
+                            <div class="icon-menu">
                               <button class="fas fa-edit edit"></button>
                               <button class="fas fa-trash delete"></button>
                             </div>
                     </div> 
                     <div class="meals_underline"></div>
+                    <div class="row">
+                      <div class="id">3</div>
+                      <div class="name">Zapiekanka z ziemniakami i brukselką</div>
+                      <div class="desc">
+                                Mamusina najlepsza zapiekanka pod słońcem. Można ją podać jako główne danie albo jako kolację. W zapiekance możesz użyć również kiełbasy paprykowej sprawi ona, że zapiekanka będzie ostrzejsza w smaku. Zgodnie z zaleceniami Makłowicza, podawać z dobrze dobranym winkiem ;)
+                      </div>
+                    
+                      <div class="icon-menu">
+                            <button class="fas fa-edit edit"></button>
+                            <button class="fas fa-trash delete"></button>
+                      </div>
+                    </div> 
+                    <div class="meals_underline"></div>
+          
+                    <div class="row">
+                            <div class="id">4</div>
+                            <div class="name">Zapiekanka z ziemniakami i brukselką</div>
+                            <div class="desc">
+                                Mamusina najlepsza zapiekanka pod słońcem. Można ją podać jako główne danie albo jako kolację. W zapiekance możesz użyć również kiełbasy paprykowej sprawi ona, że zapiekanka będzie ostrzejsza w smaku. Zgodnie z zaleceniami Makłowicza, podawać z dobrze dobranym winkiem ;)
+                            </div>
+                    
+                            <div class="icon-menu">
+                              <button class="fas fa-edit edit"></button>
+                              <button class="fas fa-trash delete"></button>
+                            </div>
+                    </div> 
+                    <div class="meals_underline"></div>
+                    
                 </div>
               </section>
           </section>
+
+            <section class="container-schedules-list invisible">
+
+                <div class="first-section-plan-list">
+                    <div class="plan-list">
+                        <p>LISTA PLANÓW</p>
+                        <button class="fas fa-plus plan-add"></button>
+                    </div>
+                </div>
+                <div class="meals_underline"></div>
+
+                <section>
+                    <div class="second-section-plan-list">
+                        <div class="meals_underline"></div>
+                        <ul class="table-header-plan">
+                            <li>ID</li>
+                            <li>NAZWA</li>
+                            <li>OPIS</li>
+                            <li>TYDZIEŃ</li>
+                            <li>AKCJE</li>
+                        </ul>
+                        <div class="meals_underline"></div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="third-section-plan-list">
+                        <div class="row">
+                                <div class="id">1</div>
+                                <div class="name">Plan jarski na bezmięsny tydzień</div>       
+                                <div class="desc">
+                                    Pojęcie kuchnia wegetariańska określa pożywienie, które ani nie zawiera mięsa, ani nie zostało przygotowane na bazie pochodzącej z mięsa (np. na rosole drobiowym). Laktoowowegetarianie (najczęściej spotykany typ wegetarian w zachodnim świecie) spożywają nabiał, laktowegetarianie wykluczają jaja, ale nie inne produkty nabiałowe.
+                                </div>
+                                <div class="week">46</div>
+                                <div class="icon-plan-list">
+                                    <button class="fas fa-edit edit"></button>
+                                    <button class="fas fa-trash delete"></button>
+                                </div>
+                        </div>
+                        <div class="meals_underline"></div>
+                        
+
+                        <div class="row">
+                          <div class="id">2</div>
+                          <div class="name">Plan jarski na bezmięsny tydzień</div>       
+                          <div class="desc">
+                              Pojęcie kuchnia wegetariańska określa pożywienie, które ani nie zawiera mięsa, ani nie zostało przygotowane na bazie pochodzącej z mięsa (np. na rosole drobiowym). Laktoowowegetarianie (najczęściej spotykany typ wegetarian w zachodnim świecie) spożywają nabiał, laktowegetarianie wykluczają jaja, ale nie inne produkty nabiałowe.
+                          </div>
+                          <div class="week">46</div>
+                          <div class="icon-plan-list">
+                              <button class="fas fa-edit edit"></button>
+                              <button class="fas fa-trash delete"></button>
+                          </div>
+                        </div>
+                        <div class="meals_underline"></div>
+                       
+                    </div>
+                </section>
+
+            </section>
 
         </div>
       </div>
