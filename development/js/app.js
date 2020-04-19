@@ -50,6 +50,10 @@ removebutton.addEventListener("click", function () {
 
 //SWITCHING DESKTOP VIBILITY - TOGGLE USERFORM/DESKTOP
 
+if (localStorage.getItem("name") !== null) {
+    desktopDisplay.classList.remove("invisible")
+}
+
 button.addEventListener("click", ()=> {
     desktopDisplay.classList.remove("invisible")
 });
