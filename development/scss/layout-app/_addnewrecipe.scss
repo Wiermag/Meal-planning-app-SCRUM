@@ -6,6 +6,7 @@
     font-size: $font-size*2;
     padding: 10px;
     margin-top: 5px;
+    width:300px;
     }
    
 .recipe {
@@ -16,14 +17,15 @@
         width: 1400px;
         background-color: white;
         color: orange;
-        font-size: 20px;
+        font-size: $font-size*2;
         border-bottom: 2px solid lightgray;
         margin-left: 12px;
+        width:100%;
     }
     &-name {
         display: flex;
         justify-content: space-between;
-        width: 1400px;
+        width: 100vw;
         background-color: white;
         color: #5B605F;
         font-size: 20px;
@@ -31,17 +33,21 @@
     }
     &-button {
         background-color: #FF6600;
-        padding: 10px 6px;
-        cursor: pointer;
-        font: bold 1em 'Open Sans', sans-serif;
+        margin: 10px;
+        font-size: $font-size ;
+        font-weight: 700;
         color: #FFFFFA;
         height: 40px;
+        width: 150px;
+        outline: none;
+        border: 2px solid white;
+        border-radius: 10px;
         text-align: center;
     }
     &-description {
         display: flex;
         justify-content: space-between;
-        width: 1400px;
+        width: 100vw;
         background-color: white;
         color: #5B605F;
         font-size: 20px;
