@@ -85,4 +85,4 @@ desktopSchedules.addEventListener("click", () => {
         schedulesList.classList.add("invisible");
     })
     
-
+   console.log(localStorage)

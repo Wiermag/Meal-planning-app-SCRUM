@@ -1,4 +1,4 @@
-.recipes {
+.recipes-container {
     margin: 70px;
 }
 
@@ -25,7 +25,6 @@
     &-name {
         display: flex;
         justify-content: space-between;
-        width: 100vw;
         background-color: white;
         color: #5B605F;
         font-size: 20px;
@@ -47,7 +46,6 @@
     &-description {
         display: flex;
         justify-content: space-between;
-        width: 100vw;
         background-color: white;
         color: #5B605F;
         font-size: 20px;
@@ -109,11 +107,12 @@
 .component-value-text,
 .instruction-value-text {
     position: absolute;
-    height: 50px;
+    height: 250px;
     width: 440px;
     top: 100px;
     left: 20px;
     overflow: auto;
+    overflow-wrap: break-word;
 }
 
 .instruction-plus,
@@ -131,22 +130,16 @@
 
 //PRZYCISKI EDIT I REMOVE:
 
-// .edit_instruction,
-// .edit_recipe {
-//     background-color: white;
-//     color: orange;
-//     position: absolute;
-//     left: 400px;
-//     top: 105px;
-//     cursor: pointer;
-// }
+.fa-edit {
+    color: orange;
+}
+.fa-trash-alt {
+    color: $icon-bin;
+}
 
-// .delete_instruction,
-// .delete_recipe {
-//     background-color: white;
-//     color: red;
-//     position: absolute;
-//     left: 430px;
-//     top: 105px;
-//     cursor: pointer;
-// }
+.editBox {
+    border: 1px solid red;
+    position: absolute;
+    width: initial;
+    height: inherit;
+}
